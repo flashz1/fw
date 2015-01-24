@@ -18,6 +18,7 @@ class Email extends CI_Controller {
         $this->email->subject($her);
         $this->email->message($her2);
 
+
         $this->email->send();
 
         echo $this->email->print_debugger();
