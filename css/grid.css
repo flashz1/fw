@@ -1,0 +1,74 @@
+/*
+    Ideal Css Framework Grid
+    Width 960px / 100%
+
+    Author: Cara V.
+    Url: caravaleryi.com
+
+*/
+
+/* Ideal Css Framework Grid */
+.container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+.row { margin-left: -15px; margin-right: -15px; }
+.row:after { display: block; content: ''; clear: both; }
+
+.col { position: relative; min-height: 1px; padding-right: 1%; padding-left: 1%; float: left; box-sizing: content-box; }
+.col.w1 { width: auto; }
+.col.w2 { width: 48%; }
+.col.w3 { width: 31%; }
+.col.w4 { width: 23%; }
+
+.fw { display: block; width: auto; float: none; }
+
+/* margins */
+.no-margin { margin: 0; }
+.m-b100 { margin-bottom: 100px; }
+
+/* paddings */
+.no-padding { padding: 0; }
+
+/* floats */
+.fl { float: left; }
+.fr { float: right; }
+.no-float { float: none; }
+
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+/* texts */
+.text-bold { font-weight: bold; }
+.text-underline { text-decoration: underline; }
+.text-center { text-align: center; }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops and (max-width: 1199px)*/
+@media (min-width: 992px) {
+    .container { width: 960px; }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* fixed 960px -> 100% */
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    /* fixed 960px -> 100% */
+    .col.w1 { width: 98%; }
+    .col.w2 { width: 98%; }
+    .col.w4 { width: 48%; }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .col.w1 { width: 98%; }
+    .col.w2 { width: 98%; }
+    .col.w3 { width: 98%; }
+    .col.w4 { width: 98%; }
+}
